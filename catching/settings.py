@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'compressor',
     'rest_framework',
+    'django_filters',
     'corsheaders',
 
     # 'twitter'
@@ -74,6 +75,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'catching.wsgi.application'
 
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ('django_filters.rest_framework.DjangoFilterBackend',)
+}
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
@@ -124,3 +128,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+
+# Twitter Settings
+# TWITTER_CONSUMER_KEY = '6twMuXytUoQJbYwndHKM26GSy'
+# TWITTER_CONSUMER_SECRET = 'W0Wc52KEsSYV4paDFPwjLryZOMVJuDUvNgNW0nPohU36H63DZU'
+# TWITTER_ACCESS_TOKEN = '728629981904023553-G2r1hGQlvZI1rGCT8bCOkigexaz9zz9'
+# TWITTER_TOKEN_SECRET = 'dUih9U0ORHVJYhoHTROjmoGa6DUsaUcGSgqx5ZpBtKxwz'
+
+# TWITTER_HASH_TAG = '#djangocon'
+# TWITTER_FOLLOW_USER = '78341716'
+# TWEETS_PER_QUERY = 15

@@ -6,4 +6,5 @@ bpython==0.14.1
 Unipath==1.1
 
 djangorestframework==3.6.3
+django-filter==1.0.4
 tweepy==3.5.0
