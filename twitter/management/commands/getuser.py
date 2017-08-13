@@ -1,21 +1,12 @@
-import tweepy
-
-from django.conf import settings
-from django.core.management import BaseCommand
-
-auth = tweepy.OAuthHandler(settings.TWITTER_CONSUMER_KEY, settings.TWITTER_CONSUMER_SECRET)
-
-auth.set_access_token(settings.TWITTER_ACCESS_TOKEN, settings.TWITTER_TOKEN_SECRET)
-
-api = tweepy.API(auth)
+from twitter.management.base import TweepyCommand
 
 
-class Command(BaseCommand):
+class Command(TweepyCommand):
 
-    help = 'Setup a simple tweet feed'
+    help = 'Get user info from Twitter'
 
     def handle(self, **options):
-        user = api.get_user('luiscberrocal')
+        user = self.api.get_user('luiscberrocal')
         print(user.screen_name)
         print(user.followers_count)
         count = 1
