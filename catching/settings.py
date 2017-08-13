@@ -41,8 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_filters',
     'corsheaders',
-
-    # 'twitter'
+    'twitter',
 ]
 
 MIDDLEWARE = [
@@ -139,3 +138,12 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # TWITTER_HASH_TAG = '#djangocon'
 # TWITTER_FOLLOW_USER = '78341716'
 # TWEETS_PER_QUERY = 15
+
+TWITTER_CONSUMER_KEY = 'V3ZGJyq2yUAw2XVKiKahhHJTs'
+TWITTER_CONSUMER_SECRET = 'GUbRJb2lQNVacjKlYJNERvucKoagt4tZiXRTGVQ5O5ezh9vaSz'
+TWITTER_ACCESS_TOKEN = '134934756-fQY6RCs2znO2OrsFQjBfCulWsQpswFxTxDZgpDyW'
+TWITTER_TOKEN_SECRET = 'Z1xrn1WaFtTS3TIY6zPqvGbO2zCqJZHNvrJU1zvtNTK7l'
+
+TWITTER_HASH_TAG = '#djangocon'
+TWITTER_FOLLOW_USER = '78341716'
+TWEETS_PER_QUERY = 15
