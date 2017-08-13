@@ -16,6 +16,8 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from rest_framework import routers
+
+import twitter
 from twitter import views as tweet_views
 
 router = routers.DefaultRouter()
@@ -23,5 +25,6 @@ router.register(r'tweets', tweet_views.TweetViewSet)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^api/v1/',include(router.urls))
+    #url(r'^twitter/',include('twitter.urls', namespace='twitter'))
+    url(r'^twitter/api/v1/', include(router.urls))
 ]
