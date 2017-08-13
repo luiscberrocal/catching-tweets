@@ -13,3 +13,4 @@ virtualenv
 *.sublime-workspace
 
 */public/static/
+.idea
