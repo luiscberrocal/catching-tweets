@@ -22,7 +22,7 @@ faker = FakerFactory.create()
 class TweetFactory(DjangoModelFactory):
     class Meta:
         model = Tweet
-        #django_get_or_create = ('id_str', )
+        django_get_or_create = ('id_str',)
 
     created_at = LazyAttribute(lambda x: faker.date_time_between(start_date="-1y", end_date="now",
                                                            tzinfo=timezone(settings.TIME_ZONE)))
