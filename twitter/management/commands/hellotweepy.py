@@ -9,5 +9,14 @@ class Command(TweepyCommand):
         public_tweets = self.api.home_timeline()
 
         for tweet in public_tweets:
-            print(tweet.text)
+            self.stdout.write(tweet.text)
+
+
+
+
+
+
+
+
+
 

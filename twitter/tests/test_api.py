@@ -9,13 +9,17 @@ from .factories import TweetFactory
 
 class TestTweetViewSet(TestCase):
 
-    def test_(self):
+    def test_list(self):
         user = User.objects.get_or_create(username='lauren')[0]
         token = Token.objects.get_or_create(user=user)[0]
-        TweetFactory.create()
+        TweetFactory.create_batch(5)
         client = APIClient()
         client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
         url = reverse('api:tweets-list')
         response = client.get(url)
-        self.assertEqual(1, len(response.data))
+        self.assertEqual(5, len(response.data))
+
+
+
+
 
