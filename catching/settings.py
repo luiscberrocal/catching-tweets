@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django_filters',
     'corsheaders',
     'twitter',
+    'django_test_tools',
 ]
 
 MIDDLEWARE = [

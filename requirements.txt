@@ -8,3 +8,9 @@ Unipath==1.1
 djangorestframework==3.6.3
 django-filter==1.0.4
 tweepy==3.5.0
+
+factory-boy==2.8.1
+
+django-debug-toolbar==1.8
+
+django-test-tools
