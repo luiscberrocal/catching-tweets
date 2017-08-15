@@ -1,6 +1,7 @@
 import tweepy
 
-from twitter.management.base import TweepyCommand, MyStreamListener
+from twitter.management.base import TweepyCommand, MyStreamListener, TweetAdapter
+from twitter.models import Tweet
 
 
 class Command(TweepyCommand):
@@ -8,6 +9,7 @@ class Command(TweepyCommand):
     help = 'search Twitter stream'
 
     def handle(self, **options):
+        adapter = TweetAdapter()
         search_query = '#djangocon'
         tweets_per_qry = 100
         max_id = -1
@@ -37,8 +39,16 @@ class Command(TweepyCommand):
                 self.stdout.write("No more tweets found")
                 break
             for tweet in new_tweets:
-                self.stdout.write('{} - {} - {}'.format(count, tweet.created_at, tweet.text))
-                count += 1
+                tweet_data = adapter.convert(tweet)
+                created = False
+                try:
+                    Tweet.objects.get(id_str=tweet_data['id_str'])
+                except Tweet.DoesNotExist:
+                    Tweet.objects.create(**tweet_data)
+                    created = True
+                if created:
+                    self.stdout.write('{} - {} - {}'.format(count, tweet.created_at, tweet.text))
+                    count += 1
             tweet_count += len(new_tweets)
             max_id = new_tweets[-1].id
 

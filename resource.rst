@@ -5,6 +5,9 @@ Tests
 -------
 @anabalica
 
+https://speakerdeck.com/anabalica/djangocon-us-testing-in-django
+
+
 --parallel
 --tag
 --exclude-tag
