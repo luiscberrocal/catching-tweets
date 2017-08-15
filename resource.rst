@@ -74,3 +74,24 @@ Tracking Pixel
 
 Does not support python 3
 
+Non locking migrations
+++++++++++++++++++++++++
+
+For MySQL
+
+10 year app
+++++++++++++
+
+django registrations
+
+Did not like this
+
+wrds databases
+++++++++++++++++
+
+wharton wrds
+
+postgres 1.5 tb per month
+
+wagtail cms
+
