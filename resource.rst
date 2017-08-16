@@ -168,3 +168,29 @@ pre-commit.com writen in Python
 bandit -r .
 
 prospector
+
+Denormalized query engine design pattern
+-------------------------------------------
+
+Simon Willlison
+
+http://lanyrd.com/2017/djangocon/sftkxk/
+
+
+elasticsearch
+
+Dilithium mysql
+
+
+Practical Testing
+------------
+
+Daniel Davis DjangoCon 2015 youtube
+
+@WayneMerry1
+
+The beauty viewsets
+---------------------
+
+Buddy Lindsey, Jr.
+
