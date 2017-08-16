@@ -131,3 +131,40 @@ GraphQL in the Wild
 ---------------------
 Arianne Dee
 
+Github
+pip install graphene_django
+
+Graphene is not being updated.
+
+Need to extend graphene to authorization.
+
+DOS
+
+    #. Whitelist for allowed queries
+    #. Maximum limit
+    #. Maximum query cost
+
+Linters
+----------
+https://docs.google.com/presentation/d/1ccYOC1O1asGIbE62-pKFKlBRvkdu2sd2WQGCpSSiGC8/edit#slide=id.p
+
+@flaviojuvenal
+
+mangage.py check
+
+dodgy library
+pycodestyle
+abstract syntax tree
+flake8
+import ast
+pyflake
+
+pylint astroid
+
+mypy
+
+pre-commit.com writen in Python
+
+bandit -r .
+
+prospector
