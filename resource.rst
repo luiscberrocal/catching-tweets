@@ -98,3 +98,36 @@ postgres 1.5 tb per month
 
 wagtail cms
 
+UTF
+-----
+pip install emojificate
+
+🌲
+
+🌲
+
+End to En Django on Kubernetes
+------------------------------
+
+@fwiles
+
+kops
+
+Patroni for Postresql. https://github.com/zalando/patroni
+
+Files in Django
+----------------
+
+django-storage
+
+whitenoise
+
+CDN in front of a s3 for media.
+
+16-ago-2017
+------------
+
+GraphQL in the Wild
+---------------------
+Arianne Dee
+
