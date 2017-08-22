@@ -194,3 +194,24 @@ The beauty viewsets
 
 Buddy Lindsey, Jr.
 
+ListAPICreateView filter_backends
+
+RetrieveUpdateDestroyAPIView
+
+
+Celery Tasks
+--------------
+
+@xima
+
+vinta.com.br/playbook
+
+tapioca Facebook
+
+idempotent and atomic
+
+https://www.vinta.com.br/playbook/
+
+https://docs.google.com/presentation/d/1Ao0S3Z-VRn_pcT5T4mXIhv3t3liQ3ZrwqaGeDqz9XCQ/edit#slide=id.g1fc007b8dd_0_12
+
+https://github.com/infernojs/inferno
