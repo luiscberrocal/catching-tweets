@@ -32,6 +32,12 @@ setUpTestData()
 mocks are for isolation
 Dont create a database object if youd dont need use build() or stub() from FactoryBoy
 
+Django Admin
+--------------
+
+https://github.com/mailbackwards/newshound
+
+
 
 Serverless Django
 -------------------
