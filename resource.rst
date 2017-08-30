@@ -37,7 +37,7 @@ Django Admin
 
 https://github.com/mailbackwards/newshound
 
-
+https://docs.google.com/presentation/d/1lVgL3SEQUTUcSFs4sD6-nGFbFn15FOK310D6m7F_WuY/edit#slide=id.p
 
 Serverless Django
 -------------------
